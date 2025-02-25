@@ -1,0 +1,158 @@
+/* Keywords */
+body, header, section, footer, table, th, td, a, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2e2e; /* Dark background for a futuristic feel */
+    color: #ddd;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff6f61; /* Vibrant red for the header */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #b13a30; /* A deeper red border below the header */
+}
+
+/* Navigation Bar Styling */
+nav {
+    text-align: center; /* Center the navigation links */
+    margin: 1rem 0;
+    background-color: #333; /* Dark background for the navigation */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: #ff6f61; /* Red color for the links */
+    margin: 0 15px; /* Space between links */
+    font-weight: bold; /* Make the links bold */
+    font-size: 18px; /* Increase font size for visibility */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+    color: #b13a30; /* Darker red when hovered */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px; /* Limit width */
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5)); /* Subtle gradient background */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 255, 255, 0.2); /* Glowing effect */
+}
+
+/* Section Headings - Make them Red but NOT clickable */
+h2, h3 {
+    color: #ff6f61; /* Red color for section headings */
+    cursor: default; /* No pointer cursor */
+    transition: none; /* Remove any transition or hover effect */
+}
+
+/* Tables Styling */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* Table glow effect */
+}
+
+table, th, td {
+    border: 1px solid #444; /* Light border for table */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+/* Header Cells in Table */
+th {
+    background-color: #ff6f61; /* Red background for table headers */
+    color: white;
+    font-weight: bold;
+}
+
+/* Table Rows */
+tr:nth-child(even) {
+    background-color: #444;
+}
+
+tr:nth-child(odd) {
+    background-color: #333;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #b13a30; /* Dark red hover effect for rows */
+}
+
+/* Styling for Links within the Table */
+table a {
+    color: #ff6f61; /* Red color for links */
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+    color: #b13a30; /* Darker red on hover */
+}
+
+/* Instagram Link Styling */
+.instagram-link {
+    color: #ff6f61; /* Red color for the Instagram link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.instagram-link:hover {
+    color: #b13a30; /* Darker red on hover */
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex; /* Display images in a row */
+    justify-content: center; /* Center images */
+    gap: 15px; /* Space between images */
+    padding: 20px;
+}
+
+.gallery img {
+    width: 300px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Glowing effect for images */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+/* Hover effect on images */
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
